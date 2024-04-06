@@ -23,7 +23,7 @@ declare global {
 
 @customElement("entur-card-entity-editor")
 export class EnturCardEntityEditor
-  extends ScopedRegistryHost(LitElement)
+  extends ScopedRegistryHost(LitElement as LitElementConstructor)
   implements LovelaceCardEditor
 {
   @property({ attribute: false }) public hass?: HomeAssistant;
