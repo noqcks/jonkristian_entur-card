@@ -29,7 +29,7 @@ let Sortable;
 
 @customElement("entur-card-editor")
 export class EnturCardEditor
-  extends ScopedRegistryHost<typeof LitElement>(LitElement)
+  extends ScopedRegistryHost(LitElement)
   implements LovelaceCardEditor
 {
   @property({ attribute: false }) public hass?: HomeAssistant;
